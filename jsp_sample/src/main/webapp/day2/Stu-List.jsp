@@ -25,10 +25,6 @@
     #search{
     	margin-bottom : 20px;
     }
-    a {
-        text-decoration: none;
-        color: black;
-    }
 </style>
 </head>
 <body>
@@ -39,6 +35,7 @@
 
 <%@ include file="../db/db.jsp" %>
 <%
+
     String keyword = request.getParameter("keyword");
     if(keyword == null) keyword = "";
 %>
@@ -71,8 +68,7 @@
             String currentStuNo = rs.getString("STU_NO"); // 현재 학생의 학번을 변수에 저장
     %>
         <tr>
-            <!-- 학번을 클릭하면 Stu-View.jsp로 이동하는 링크를 추가 -->
-            <td><a href="Stu-View.jsp?stuNo=<%= currentStuNo %>"><%= currentStuNo %></a></td>
+            <td><%= currentStuNo %></td>
             <td><%= rs.getString("STU_NAME") %></td>
             <td><%= rs.getString("STU_DEPT") %></td>
             <td><%= rs.getString("STU_HEIGHT") %></td>
