@@ -56,7 +56,7 @@
 				} else{
 			%>
 				<a href="javascript:;" onclick="fnList('CNT', 'DESC')">조회수🔻</a>
-			<%
+			<%sssssssssssssssssssssssssssssssssssssssssssssssddd 
 				}
 			%>
 			</th>
@@ -95,9 +95,11 @@
 		 			<a href="javascript:;" onclick="fnBoard(<%= rs.getString("BOARDNO") %>)"><%= rs.getString("TITLE") %></a>
 		 		</td>
 		 		<td> <%= rs.getString("USERID") %> </td>
-		 		<td> <%= rs.getString("CNT") %> </td>
 		 		<td> <%= rs.getString("CTIME") %> </td>
 		 	</tr>	
+		 	
+		 	
+		 	sponse dit ln)fmls
 	<%		
 		}
 		
